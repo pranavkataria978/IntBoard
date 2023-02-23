@@ -1,0 +1,49 @@
+.card{
+
+    width: 50vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1vh 0;
+    border-radius: 10px;
+}
+
+.content{
+
+    width: 15vw;
+    
+
+}
+.lower{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonDesign{
+    
+        border-radius: 10px;
+
+}
+.date{
+
+   
+    padding: 4px 4px;
+    line-height: 1.25rem;
+    font-style: italic;
+    
+
+}
+.img{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tag{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

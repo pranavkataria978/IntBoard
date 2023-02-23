@@ -1,0 +1,36 @@
+.content{
+
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 5vh;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.text{
+
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 4px 4px;
+    line-height: 1.25rem;
+
+}
+.caption{
+    
+        font-family: "Roboto",sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: justify;
+        font-style: italic;
+        padding-left: 22.5%;
+    
+}
