@@ -25,6 +25,17 @@ export function getIssuesFiles(){
     return fs.readdirSync(issuesDirectory);
 }
 
+export function getOpenIssues(){
+    
+        const postFiles = getIssuesFiles();
+        const allPosts = postFiles.map(postFile => {
+            return decodeIssues(postFile);
+        });
+        const openIssues = allPosts.filter(post => post.status === 'Open');
+    
+        return openIssues;
+}
+
 export function getAllIssues(){
 
     const postFiles = getIssuesFiles();
@@ -32,7 +43,6 @@ export function getAllIssues(){
         return decodeIssues(postFile);
     });
 
-    console.log(postFiles)
 
     return allPosts;
 }

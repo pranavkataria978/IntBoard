@@ -2,7 +2,7 @@
 @import "~@blueprintjs/core/lib/css/blueprint.css";
 @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
 
-.button-design{
+.buttonDesign{
  
    border-radius: 10px;
 }
@@ -27,5 +27,15 @@
 }
 .issues-heading{
 
-  margin-left: 22.5vw;
+  margin-left: 45vw;
+}
+.projects-heading{
+
+  margin-left: 45vw;
+}
+.lower-half{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

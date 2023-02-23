@@ -7,6 +7,10 @@ import Profile from '@/components/HomePage/Profile'
 import FeaturedPosts from '@/components/HomePage/FeaturedPosts'
 const inter = Inter({ subsets: ['latin'] })
 import { getFeaturedPosts } from '@/utils/posts'
+import { getOpenIssues } from '@/utils/issues'
+import { getOpenProjects } from '@/utils/projects'
+import MultipleIssues from '@/components/Issues/MultipleIssues'
+import MultipleProjects from '@/components/Projects/MultipleProjects'
 
 export default function Home(props) {
   return (
@@ -25,7 +29,20 @@ export default function Home(props) {
             <FeaturedPosts posts = {props.posts}/>
           </div>
           
-          <div>Issues</div>
+          <div className='lower-half'>
+
+            <div>
+              <h2 className='issues-heading'>Current Issues</h2>
+              <MultipleIssues issues = {props.issues}></MultipleIssues>
+            </div>
+
+            <div>
+              <h2 className='projects-heading'>Current Projects</h2>
+              <MultipleProjects projects = {props.projects}></MultipleProjects>
+            </div>
+
+          </div>
+          
 
         </div>
       </main>
@@ -36,10 +53,16 @@ export default function Home(props) {
 export function getStaticProps() {
 
     const featuredPosts = getFeaturedPosts();
+    const issues = getOpenIssues();
+    const projects = getOpenProjects();
 
     return {
 
-        props: { posts: featuredPosts}
+        props: { posts: featuredPosts,
+        
+        issues: issues,
+        projects: projects
+      }
     }
 }
 
