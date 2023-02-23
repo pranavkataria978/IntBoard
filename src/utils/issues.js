@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const issuesDirectory = path.join(process.cwd(), 'src/content/issues/');
+const issuesDirectory = path.join(process.cwd(), 'src/content/Issues/');
 
 export function decodeIssues(fileName){
 
