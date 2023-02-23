@@ -1,5 +1,5 @@
 import PostCard from "./PostCard";
-import classes from "./MultiplePosts.module.css";
+import classes from "./multiplePosts.module.css";
 
 export default function MultiplePosts(props) {
 
